@@ -1,0 +1,74 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/layout"
+    tools:context="id.ac.uin_malang.application.grid">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#91bde7"
+        android:text="LOGIN ADMIN" />
+
+    <EditText
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:inputType="text"
+        android:id="@+id/username"/>
+    <EditText
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColorHint="#fff"
+        android:inputType="textPassword"
+        android:id="@+id/pass"/>
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Username : admin"
+        android:layout_marginLeft="16dp"
+        android:textSize="15dp"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Password : admin"
+        android:layout_marginLeft="16dp"
+        android:textSize="15dp"
+        />
+
+    <Button
+        android:backgroundTint="#48a6b9"
+        android:textColor="#fff"
+        android:text="SIGN IN"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMasuk"/>
+</LinearLayout>
+
+</ScrollView>

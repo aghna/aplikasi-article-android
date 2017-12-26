@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/refresh"
+    android:layout_height="match_parent"
+    tools:context="id.ac.uin_malang.application.list_admin">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tolList"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"/>
+
+
+    <Button
+        android:layout_below="@+id/tolList"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#1382b6"
+        android:id="@+id/btnTambah"
+        android:textColor="#fff"
+        android:text="Tambah Article"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        />
+
+   <android.support.v7.widget.RecyclerView
+       android:layout_marginTop="10dp"
+       android:layout_below="@+id/btnTambah"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/recyclerTemp"
+       android:scrollbars="vertical">
+
+   </android.support.v7.widget.RecyclerView>
+</RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

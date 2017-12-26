@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.ac.uin_malang.application">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/iconku"
+        android:label="ARTICLE"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".splash_Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".list_admin"
+            android:label="List Admin"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".TambahBerita"
+            android:label="Tambah Article"
+            android:parentActivityName=".list_admin">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".list_admin" />
+        </activity>
+        <activity
+            android:name=".DetailNews"
+            android:label="Detail Article"
+            android:parentActivityName=".list_admin">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".list_admin" />
+        </activity>
+        <activity
+            android:name=".detail_user"
+            android:label="Detail Article"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".update"></activity>
+    </application>
+
+</manifest>
